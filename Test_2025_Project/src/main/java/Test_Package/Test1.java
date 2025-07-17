@@ -1,6 +1,7 @@
 package Test_Package;
 
 import org.testng.annotations.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -15,6 +16,8 @@ public class Test1 {
 		WebDriver driver = new ChromeDriver();
 	    driver.get("https://maven.apache.org/download.cgi");
 	    System.out.println("Hello Jatin");
+	    driver.get("https://www.facebook.com");
+	    driver.findElement(By.id("email")).sendKeys("abcd");
 		
 	}
 
